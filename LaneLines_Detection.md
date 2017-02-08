@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 [image2]: ./examples/canny.jpg "Canny"
-[image3]: ./examples/poly.jpg "Polygon Mask"
+[image3]: ./examples/poly_mask.jpg "Polygon Mask"
 [image4]: ./examples/LR_lines.jpg "Left and Right Lines"
 [image5]: ./examples/mismatch_top.jpg "Overlap"
 [image6]: ./examples/match.jpg "Matched"
