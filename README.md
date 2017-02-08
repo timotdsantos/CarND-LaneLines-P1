@@ -6,11 +6,11 @@
 Overview
 ---
 
-This project is about detecting lane lines in images using Python and OpenCV. The solution employs the basic image processing building blocks. 
+This project is about detecting lane lines in images and videos using Python and OpenCV. The solution employs the basic image processing building blocks. 
 
 Two main files are submitted here: a file containing project code and a file containing a brief write up explaining the solution. 
-- Final_LaneLine_Detection.ipynb (code)
-- LaneLines_Detection.md (write up)
+- [Final_LaneLine_Detection.ipynb (code)](https://github.com/timotdsantos/CarND-LaneLines-P1/blob/master/Final_LaneLine_Detection.ipynb)
+- [LaneLines_Detection.md (write up)](https://github.com/timotdsantos/CarND-LaneLines-P1/blob/master/LaneLines_Detection.md)
 
 Another optional file is included (Final_LaneLine_Detection.html) which is the code notebook in html format for ease of viewing.
 
@@ -20,20 +20,21 @@ The specifications are further explained in [project rubric](https://review.udac
 
 Project Write Up
 ---
-Reflection_LaneLines_Detection.md
+[LaneLines_Detection.md (write up)](https://github.com/timotdsantos/CarND-LaneLines-P1/blob/master/LaneLines_Detection.md)
 
 Contains the description and the reflection on the exercise to:
 1. Describe the pipeline 2. Identify any shortcomings 3. Suggest possible improvements
 
-The Project
+The Project Code
 ---
-Final_LaneLine_Detection.ipynb (Final_LaneLine_Detection.html)
+[Final_LaneLine_Detection.ipynb (code)](https://github.com/timotdsantos/CarND-LaneLines-P1/blob/master/Final_LaneLine_Detection.ipynb) 
+[(Final_LaneLine_Detection.html)](https://github.com/timotdsantos/CarND-LaneLines-P1/blob/master/Final_LaneLine_Detection.html)
 
 Contains all project code. File dependencies are included in the repository.
 
-Below are steps to resolve dependencies and run the project.
+Below are steps to resolve dependencies and run the project. (Taken from original CarND Project 1 Readme)
 
-## If you have already installed the [CarND Term1 Starter Kit](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) you should be good to go!   If not, you can install the starter kit or follow the install instructions below to get started on this project. ##
+**If you have already installed the [CarND Term1 Starter Kit](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) you should be good to go!   If not, you can install the starter kit or follow the install instructions below to get started on this project. **
 
 **Step 1:** Getting setup with Python
 
