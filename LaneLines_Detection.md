@@ -38,16 +38,16 @@ The pipeline consisted of three sections:
  It consists of the following processing steps
     1 Convert to grayscale
     
-![image1]    
+![alt text][image1]    
 
     2 Gaussian smoothing - kernel size was determined iteratively to avoid noisy output
     3 Canny edge detection  - thresholds were also iteratively selected
     
-![image2]    
+![alt text][image2]    
 
     4 Applying polygon mask - a trapezoid was chosen as the area of interest
     
-![image3]    
+![alt text][image3]    
     5 Hough transform - thresholds were also iteratively selected to minimize false positives**
 
 The line aggregation could be found in the modified draw_lines function.
