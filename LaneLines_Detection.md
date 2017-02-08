@@ -36,34 +36,44 @@ The pipeline consisted of three sections:
 
  The Line Detection results in multiple lines detected within the area of interest. 
  It consists of the following processing steps
-    **1 Convert to grayscale
-![alt text][image1]    
+    1 Convert to grayscale
+    
+![image1]    
+
     2 Gaussian smoothing - kernel size was determined iteratively to avoid noisy output
     3 Canny edge detection  - thresholds were also iteratively selected
-![alt text][image2]    
+    
+![image2]    
+
     4 Applying polygon mask - a trapezoid was chosen as the area of interest
-![alt text][image3]    
+    
+![image3]    
     5 Hough transform - thresholds were also iteratively selected to minimize false positives**
 
 The line aggregation could be found in the modified draw_lines function.
 It consists of filtering out the irrelevant detected lines and consolidating them to the left lane or right lane. 
 Here are the processing steps taken:
-   **1 Horizontal Lines were discarded
+   1 Horizontal Lines were discarded
    2 Slope of detected lines were calculated and discarded if absolute value is below a certain threshold. 
        I used the slope_threshold=1, which retains the lines steeper than the 45-degree angle.       
    3 Negative and Positive slopes were seggregated.
+   
 ![alt text][image4]   
+
    4 Left lines that are crossing over to the right half of the screen and right lines crossing over the left half are discarded  
    5 Line-fitting algorithm (polyfit) was used to generate 1 line for each side using the line edpoints as input**
 
 
 The Line Extrapolation consists of defining the coordinates to draw the line segments extending to the 
 bottom edge of the screen, and matching length of the lanes.
-   **1 Get the points where the derived lane lines intersect with the bottom edge. I just used the polyfit linear equation.
+   1 Get the points where the derived lane lines intersect with the bottom edge. I just used the polyfit linear equation.
    2 Matched the top endpoints of left and right lanes. I chose the point closer to the bottom, and got the corresponding 
       coordinate from the left and right fitted line.
+
 ![alt text][image5]
-   3 Used the 4 points as input to draw the 2 lines on the image.**
+
+   3 Used the 4 points as input to draw the 2 lines on the image.
+
 ![alt text][image6]
 
 ###2. Identify potential shortcomings with your current pipeline
