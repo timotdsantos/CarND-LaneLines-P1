@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/poly_mask.jpg "Polygon Mask"
 [image4]: ./examples/LR_lines.jpg "Left and Right Lines"
 [image5]: ./examples/mismatch_top.jpg "Overlap"
-[image6]: ./examples/match.jpg "Matched"
+[image6]: ./examples/matched.jpg "Matched"
 [image7]: ./examples/match_red.jpg "Final Image"
 
 ---
