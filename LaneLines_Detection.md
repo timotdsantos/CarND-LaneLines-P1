@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of three sections:
+The pipeline consisted of three sections:
 - line detection
 - line aggregation
 - line extrapolation
