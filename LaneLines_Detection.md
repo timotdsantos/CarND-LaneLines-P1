@@ -1,16 +1,10 @@
 #**Finding Lane Lines on the Road** 
 
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
-
-**Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+* Reflect on the work in a written report
 
 
 [//]: # (Image References)
@@ -20,14 +14,12 @@ The goals / steps of this project are the following:
 [image3]: ./examples/poly_mask.jpg "Polygon Mask"
 [image4]: ./examples/LR_lines.jpg "Left and Right Lines"
 [image5]: ./examples/mismatch_top.jpg "Overlap"
-[image6]: ./examples/matched.jpg "Matched"
+[image6]: ./examples/match.jpg "Matched"
 [image7]: ./examples/match_red.jpg "Final Image"
 
 ---
 
-### Reflection
-
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. Describe the pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 The pipeline consisted of three sections:
 - line detection
@@ -46,7 +38,7 @@ The pipeline consisted of three sections:
     4 Applying polygon mask - a trapezoid was chosen as the area of interest
     
 ![alt text][image3]    
-    5 Hough transform - thresholds were also iteratively selected to minimize false positives**
+    5 Hough transform - thresholds were also iteratively selected to minimize false positives
 
 **The line aggregation** could be found in the modified draw_lines function.
 It consists of filtering out the irrelevant detected lines and consolidating them to the left lane or right lane. 
@@ -60,18 +52,19 @@ Here are the processing steps taken:
 ![alt text][image4]   
 
    4 Left lines that are crossing over to the right half of the screen and right lines crossing over the left half are discarded  
-   5 Line-fitting algorithm (polyfit) was used to generate 1 line for each side using the line edpoints as input**
+   5 Line-fitting algorithm (polyfit) was used to generate 1 line for each side using the line edpoints as input
 
 
 **The Line Extrapolation** consists of defining the coordinates to draw the line segments extending to the 
 bottom edge of the screen, and matching length of the lanes.
    1 Get the points where the derived lane lines intersect with the bottom edge. I just used the polyfit linear equation.
+   
    2 Matched the top endpoints of left and right lanes. I chose the point closer to the bottom, and got the corresponding 
       coordinate from the left and right fitted line.
 
 ![alt text][image5]
 
-   3 Used the 4 points as input to draw the 2 lines on the image.
+   3 Used the 4 points as input to draw the 2 lane lines on the image.
 
 ![alt text][image6]
 
