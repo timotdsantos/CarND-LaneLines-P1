@@ -1,12 +1,11 @@
-#**Road Lane Lines Detection Project** 
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+##Road Lane Lines Detection Project
 
 <img src="laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
 
 Overview
 ---
 
-This project is about detecting lane lines in images and videos using Python and OpenCV. The solution employs the basic image processing building blocks. 
+This project is about detecting lane lines in images and videos using Python and OpenCV. The solution employs various image processing techniques. 
 
 Two main files are submitted here: a file containing project code and a file containing a brief write up explaining the solution. 
 - [Final_LaneLine_Detection.ipynb (code)](https://github.com/timotdsantos/CarND-LaneLines-P1/blob/master/Final_LaneLine_Detection.ipynb)
